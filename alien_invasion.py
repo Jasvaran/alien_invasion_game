@@ -4,8 +4,6 @@ import pygame
 
 class AlienInvasion:
 	"""Overall class to manage game assets and behavior"""
-	"""for git"""
-
 	def __init__(self):
 		"""Initialize the game, and create game resources"""
 		pygame.init()
