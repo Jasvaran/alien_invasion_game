@@ -10,6 +10,7 @@ class Ship:
 
 		# Movement flag
 		self.moving_right = False
+		self.moving_left = False
 
 
 		# Load the ship image and get its rect.
@@ -22,7 +23,9 @@ class Ship:
 	def update(self):
 		"""Update the ships position based on the movement flag"""
 		if self.moving_right:
-			self.rect.x += 1	
+			self.rect.x += 1
+		if self.moving_left:
+			self.rect.x -= 1
 
 
 	def blitme(self):
